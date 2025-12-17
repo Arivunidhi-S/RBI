@@ -1,13 +1,21 @@
 ﻿using System;
 using System.Configuration;
 using System.Data;
+<<<<<<< HEAD
+=======
+using System.Linq;
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
 using System.Web;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
+<<<<<<< HEAD
 
+=======
+using System.Xml.Linq;
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
 using System.Data.SqlClient;
 using System.Data.Sql;
 using System.Data.OleDb;
@@ -16,8 +24,14 @@ using System.Drawing;
 public partial class RBILogin : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
+<<<<<<< HEAD
     {          
     Session["sesUserID"] = 0;
+=======
+    {
+        txtLogin.Focus();
+        Session["sesUserID"] = 0;
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
     }
 
     protected void Page_Init(object sender, EventArgs e)
@@ -78,10 +92,16 @@ public partial class RBILogin : System.Web.UI.Page
         }
         catch (Exception ex)
         {
+<<<<<<< HEAD
            
             //InsertLogAuditTrial is used to insert the action into MasterAuditTrail table
             InsertLogAuditTrail(Session["sesUserID"].ToString(), "MasterLogin", "SignIn", ex.ToString(), "Audit");
             ShowMessage(7);
+=======
+            ShowMessage(7);
+            //InsertLogAuditTrial is used to insert the action into MasterAuditTrail table
+            InsertLogAuditTrail(Session["sesUserID"].ToString(), "MasterLogin", "SignIn", ex.ToString(), "Audit");
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
         }
 
     }

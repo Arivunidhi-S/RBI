@@ -256,7 +256,11 @@
                                                        <%-- <asp:Button runat="server" ID="btnDelivered" CssClass="buttonstyle" Text="Update"
                                                             Visible="false" OnClick="btnDelivered_Click" />--%>
                                                         <asp:SqlDataSource ID="SqlDataSourceCA" runat="server" ConnectionString="<%$ ConnectionStrings:connString %>"
+<<<<<<< HEAD
                                                             SelectCommand="SELECT  [CompanyId], [CompanyName] FROM [Company] where deleted=0 ORDER BY [CompanyId]">
+=======
+                                                            SelectCommand="SELECT  [CompanyId], [CompanyName] FROM [RBI].[dbo].[Company] where deleted=0 ORDER BY [CompanyId]">
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
                                                         </asp:SqlDataSource>
                                                     </td>
                                                 </tr>

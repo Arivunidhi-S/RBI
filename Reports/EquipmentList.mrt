@@ -24,7 +24,11 @@
         <Name>VW__EquipmentAsset</Name>
         <NameInSource>RBI</NameInSource>
         <Parameters isList="true" count="0" />
+<<<<<<< HEAD
         <SqlCommand>SELECT ROW_NUMBER() OVER(ORDER BY [DoshNo] DESC) as No,[ProcessArea],[DoshNo],[EqupID],[EqupDescription] FROM [VW__EquipmentAsset]</SqlCommand>
+=======
+        <SqlCommand>SELECT ROW_NUMBER() OVER(ORDER BY [DoshNo] DESC) as No,[ProcessArea],[DoshNo],[EqupID],[EqupDescription] FROM [RBI].[dbo].[VW__EquipmentAsset]</SqlCommand>
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
       </VW__EquipmentAsset>
     </DataSources>
     <Relations isList="true" count="0" />

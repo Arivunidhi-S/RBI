@@ -755,6 +755,7 @@ public partial class InspectionPlan : System.Web.UI.Page
     {
         try
         {
+<<<<<<< HEAD
             lblStatus.Text = string.Empty;
             SqlConnection conn = BusinessTier.getConnection();
             conn.Open();
@@ -895,6 +896,148 @@ public partial class InspectionPlan : System.Web.UI.Page
             }
 
             BusinessTier.DisposeConnection(conn);
+=======
+            // lblStatus.Text = string.Empty;
+            // SqlConnection conn = BusinessTier.getConnection();
+            // conn.Open();
+
+            //// <%--------------1--------Thinning------------------------%>
+
+            // if (lbl_Thin_Date.Visible == true && cbo_Thin_inspecEffec.SelectedValue.ToString() != "")
+            // {
+            //     int intFlag1 = BusinessTier.InspectionPlan(conn, Convert.ToInt32(cboProcessArea.SelectedValue.ToString()), Convert.ToInt32(cboEquipment.SelectedValue.ToString()), Convert.ToInt32(cboComponent.SelectedValue.ToString()), "Thinning", cbo_Thin_inspecEffec.SelectedValue.ToString(), Convert.ToDateTime(dt_Thin_InsDt.SelectedDate.ToString().Trim()), "U");
+            //     lblStatus.Text = "Successfully Value Inserted";
+            //     cbo_Thin_inspecEffec.EmptyMessage = "Select";
+            // }
+
+            //    //<%--------------2--------ExternalCorrosion------------------------%>
+
+            // if (lbl_ExeCor_Date.Visible == true && cbo_ExeCor_inspecEffec.SelectedValue.ToString() != "")
+            // {
+            //     int intFlag1 = BusinessTier.InspectionPlan(conn, Convert.ToInt32(cboProcessArea.SelectedValue.ToString()), Convert.ToInt32(cboEquipment.SelectedValue.ToString()), Convert.ToInt32(cboComponent.SelectedValue.ToString()), "ExternalCorrosion", cbo_ExeCor_inspecEffec.SelectedValue.ToString(), Convert.ToDateTime(dt_ExeCor_InsDt.SelectedDate.ToString().Trim()), "U");
+            //     lblStatus.Text = "Successfully Value Inserted";
+            //     cbo_ExeCor_inspecEffec.EmptyMessage = "Select";
+            // }
+
+            // //   <%--------------3--------CUI Damage------------------------%>
+
+            // if (lbl_CUIDamage_Date.Visible == true && cbo_CUIDamage_inspecEffec.SelectedValue.ToString() != "")
+            //  {
+            //     int intFlag1 = BusinessTier.InspectionPlan(conn, Convert.ToInt32(cboProcessArea.SelectedValue.ToString()), Convert.ToInt32(cboEquipment.SelectedValue.ToString()), Convert.ToInt32(cboComponent.SelectedValue.ToString()), "CUIDamage", cbo_CUIDamage_inspecEffec.SelectedValue.ToString(), Convert.ToDateTime(dt_CUIDamage_InsDt.SelectedDate.ToString().Trim()), "U");
+            //     lblStatus.Text = "Successfully Value Inserted";
+            //     cbo_CUIDamage_inspecEffec.EmptyMessage = "Select";
+            // }
+
+            // // <%-------------4---------External CLSCC------------------------%>
+
+            // if (lbl_ExtCLSCC_Date.Visible == true && cbo_ExtCLSCC_inspecEffec.SelectedValue.ToString() != "")
+            // {
+            //     int intFlag1 = BusinessTier.InspectionPlan(conn, Convert.ToInt32(cboProcessArea.SelectedValue.ToString()), Convert.ToInt32(cboEquipment.SelectedValue.ToString()), Convert.ToInt32(cboComponent.SelectedValue.ToString()), "ExternalCLSCC", cbo_ExtCLSCC_inspecEffec.SelectedValue.ToString(), Convert.ToDateTime(dt_ExtCLSCC_InsDt.SelectedDate.ToString().Trim()), "U");
+            //     lblStatus.Text = "Successfully Value Inserted";
+            //     cbo_ExtCLSCC_inspecEffec.EmptyMessage = "Select";
+            // }
+            //// <%--------------5--------External CUI CLSCC------------------------%>
+
+            // if (lbl_ExtCUI_Date.Visible == true && cbo_ExtCUI_inspecEffec.SelectedValue.ToString() != "")
+            // {
+            //     int intFlag1 = BusinessTier.InspectionPlan(conn, Convert.ToInt32(cboProcessArea.SelectedValue.ToString()), Convert.ToInt32(cboEquipment.SelectedValue.ToString()), Convert.ToInt32(cboComponent.SelectedValue.ToString()), "External CUI CLSCC", cbo_ExtCUI_inspecEffec.SelectedValue.ToString(), Convert.ToDateTime(dt_ExtCUI_InsDt.SelectedDate.ToString().Trim()), "U");
+            //     lblStatus.Text = "Successfully Value Inserted";
+            //     cbo_ExtCUI_inspecEffec.EmptyMessage = "Select";
+            // }
+
+            // //  <%------------6----------Caustic------------------------%>
+
+            // if (lbl_Caustic_Date.Visible == true && cbo_Caustic_inspecEffec.SelectedValue.ToString() != "")
+            // {
+            //     int intFlag1 = BusinessTier.InspectionPlan(conn, Convert.ToInt32(cboProcessArea.SelectedValue.ToString()), Convert.ToInt32(cboEquipment.SelectedValue.ToString()), Convert.ToInt32(cboComponent.SelectedValue.ToString()), "Caustic", cbo_Caustic_inspecEffec.SelectedValue.ToString(), Convert.ToDateTime(dt_Caustic_InsDt.SelectedDate.ToString().Trim()), "U");
+            //     lblStatus.Text = "Successfully Value Inserted";
+            //     cbo_Caustic_inspecEffec.EmptyMessage = "Select";
+            // }
+
+            // //  <%--------------7--------Amine------------------------%>
+
+            // if (lbl_Amine_Date.Visible == true && cbo_Amine_inspecEffec.SelectedValue.ToString() != "")
+            // {
+            //     int intFlag1 = BusinessTier.InspectionPlan(conn, Convert.ToInt32(cboProcessArea.SelectedValue.ToString()), Convert.ToInt32(cboEquipment.SelectedValue.ToString()), Convert.ToInt32(cboComponent.SelectedValue.ToString()), "Amine", cbo_Amine_inspecEffec.SelectedValue.ToString(), Convert.ToDateTime(dt_Amine_InsDt.SelectedDate.ToString().Trim()), "U");
+            //     lblStatus.Text = "Successfully Value Inserted";
+            //     cbo_Amine_inspecEffec.EmptyMessage = "Select";
+            // }
+
+            // //  <%--------------8--------Sulfide------------------------%>
+
+            // if (lbl_Sulfide_Date.Visible == true && cbo_Sulfide_inspecEffec.SelectedValue.ToString() != "")
+            // {
+            //     int intFlag1 = BusinessTier.InspectionPlan(conn, Convert.ToInt32(cboProcessArea.SelectedValue.ToString()), Convert.ToInt32(cboEquipment.SelectedValue.ToString()), Convert.ToInt32(cboComponent.SelectedValue.ToString()), "Sulfide", cbo_Sulfide_inspecEffec.SelectedValue.ToString(), Convert.ToDateTime(dt_Sulfide_InsDt.SelectedDate.ToString().Trim()), "U");
+            //     lblStatus.Text = "Successfully Value Inserted";
+            //     cbo_Sulfide_inspecEffec.EmptyMessage = "Select";
+            // }
+
+            // // <%-------------9---------H2S------------------------%>
+
+            // if (lbl_H2S_Date.Visible == true && cbo_H2S_inspecEffec.SelectedValue.ToString() != "")
+            // {
+            //     int intFlag1 = BusinessTier.InspectionPlan(conn, Convert.ToInt32(cboProcessArea.SelectedValue.ToString()), Convert.ToInt32(cboEquipment.SelectedValue.ToString()), Convert.ToInt32(cboComponent.SelectedValue.ToString()), "H2S", cbo_H2S_inspecEffec.SelectedValue.ToString(), Convert.ToDateTime(dt_H2S_InsDt.SelectedDate.ToString().Trim()), "U");
+            //     lblStatus.Text = "Successfully Value Inserted";
+            //     cbo_H2S_inspecEffec.Text = String.Empty;
+            //     cbo_H2S_inspecEffec.EmptyMessage = "Select";
+            // }
+
+            //  // <%------------10----------Carbonate------------------------%>
+
+            // if (lbl_Carbonate_Date.Visible == true && cbo_Carbonate_inspecEffec.SelectedValue.ToString() != "")
+            // {
+            //     int intFlag1 = BusinessTier.InspectionPlan(conn, Convert.ToInt32(cboProcessArea.SelectedValue.ToString()), Convert.ToInt32(cboEquipment.SelectedValue.ToString()), Convert.ToInt32(cboComponent.SelectedValue.ToString()), "Carbonate", cbo_Carbonate_inspecEffec.SelectedValue.ToString(), Convert.ToDateTime(dt_Carbonate_InsDt.SelectedDate.ToString().Trim()), "U");
+            //     lblStatus.Text = "Successfully Value Inserted";
+            //     cbo_Carbonate_inspecEffec.EmptyMessage = "Select";
+            // }
+
+            //   // <%----------11------------PTA------------------------%>
+
+            // if (lbl_PTA_Date.Visible == true && cbo_PTA_inspecEffec.SelectedValue.ToString() != "")
+            // {
+            //     int intFlag1 = BusinessTier.InspectionPlan(conn, Convert.ToInt32(cboProcessArea.SelectedValue.ToString()), Convert.ToInt32(cboEquipment.SelectedValue.ToString()), Convert.ToInt32(cboComponent.SelectedValue.ToString()), "PTA", cbo_PTA_inspecEffec.SelectedValue.ToString(), Convert.ToDateTime(dt_PTA_InsDt.SelectedDate.ToString().Trim()), "U");
+            //     lblStatus.Text = "Successfully Value Inserted";
+            //     cbo_PTA_inspecEffec.EmptyMessage = "Select";
+            // }
+
+            // //  <%--------------12--------CLSCC------------------------%>
+
+            // if (lbl_CLSCC_Date.Visible == true && cbo_CLSCC_inspecEffec.SelectedValue.ToString() != "")
+            // {
+            //     int intFlag1 = BusinessTier.InspectionPlan(conn, Convert.ToInt32(cboProcessArea.SelectedValue.ToString()), Convert.ToInt32(cboEquipment.SelectedValue.ToString()), Convert.ToInt32(cboComponent.SelectedValue.ToString()), "CLSCC", cbo_CLSCC_inspecEffec.SelectedValue.ToString(), Convert.ToDateTime(dt_CLSCC_InsDt.SelectedDate.ToString().Trim()), "U");
+            //     lblStatus.Text = "Successfully Value Inserted";
+            //     cbo_CLSCC_inspecEffec.EmptyMessage = "Select";
+            // }
+
+            // // <%----------13------------HSC-HF------------------------%>
+
+            // if (lbl_HSCHF_Date.Visible == true && cbo_HSCHF_inspecEffec.SelectedValue.ToString() != "")
+            // {
+            //     int intFlag1 = BusinessTier.InspectionPlan(conn, Convert.ToInt32(cboProcessArea.SelectedValue.ToString()), Convert.ToInt32(cboEquipment.SelectedValue.ToString()), Convert.ToInt32(cboComponent.SelectedValue.ToString()), "HSC-HF", cbo_HSCHF_inspecEffec.SelectedValue.ToString(), Convert.ToDateTime(dt_HSCHF_InsDt.SelectedDate.ToString().Trim()), "U");
+            //     lblStatus.Text = "Successfully Value Inserted";
+            // }
+
+            // // <%------------14----------HIC/SOHIC-HF------------------------%>
+
+            // if (lbl_SOHIC_Date.Visible == true && cbo_SOHIC_inspecEffec.SelectedValue.ToString() != "")
+            // {
+            //     int intFlag1 = BusinessTier.InspectionPlan(conn, Convert.ToInt32(cboProcessArea.SelectedValue.ToString()), Convert.ToInt32(cboEquipment.SelectedValue.ToString()), Convert.ToInt32(cboComponent.SelectedValue.ToString()), "HIC/SOHIC-HF", cbo_SOHIC_inspecEffec.SelectedValue.ToString(), Convert.ToDateTime(dt_SOHIC_InsDt.SelectedDate.ToString().Trim()), "U");
+            //     lblStatus.Text = "Successfully Value Updated";
+            //     cbo_SOHIC_inspecEffec.EmptyMessage = "Select";
+            // }
+
+            // //  <%------------15----------HTHA------------------------%>
+
+            // if (lbl_HTHA_Date.Visible == true && cbo_HTHA_inspecEffec.SelectedValue.ToString() != "")
+            // {
+            //     int intFlag1 = BusinessTier.InspectionPlan(conn, Convert.ToInt32(cboProcessArea.SelectedValue.ToString()), Convert.ToInt32(cboEquipment.SelectedValue.ToString()), Convert.ToInt32(cboComponent.SelectedValue.ToString()), "HTHA", cbo_HTHA_inspecEffec.SelectedValue.ToString(), Convert.ToDateTime(dt_HTHA_InsDt.SelectedDate.ToString().Trim()), "U");
+            //     lblStatus.Text = "Successfully Value Inserted";
+            //    // dt_HTHA_InsDt.PreRender();
+            //     cbo_HTHA_inspecEffec.EmptyMessage = "Select";
+            // }
+
+            // BusinessTier.DisposeConnection(conn);
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
             lblStatus.Text = "Successfully Value Inserted";
             lblStatus.ForeColor = Color.Blue;
         }

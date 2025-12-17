@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+=======
+
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
 <!--
 
 ***********************************************************************************************
@@ -10,6 +14,10 @@ Copyright (C) Microsoft Corporation. All rights reserved.
 
 ***********************************************************************************************
 -->
+<<<<<<< HEAD
+=======
+
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -19,7 +27,11 @@ Copyright (C) Microsoft Corporation. All rights reserved.
     <ProjectGuid>{c2215eeb-6b93-4d04-a769-e2c9dd863220}</ProjectGuid>
     <SourceWebPhysicalPath>$(MSBuildThisFileDirectory)</SourceWebPhysicalPath>
     <SourceWebVirtualPath>/RBI</SourceWebVirtualPath>
+<<<<<<< HEAD
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+=======
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
     <SourceWebProject>http://localhost/RBI</SourceWebProject>
     <SourceWebMetabasePath>/LM/W3SVC/1/ROOT/RBI</SourceWebMetabasePath>
   </PropertyGroup>
@@ -28,6 +40,10 @@ Copyright (C) Microsoft Corporation. All rights reserved.
     <!-- for VS2010 we need to use 10.5 but for VS2012+ we should use VisualStudioVersion -->
     <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)' =='' and '$(VisualStudioVersion)' == 10.0 ">10.5</WebPublishTargetsVersion>
     <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)'=='' ">$(VisualStudioVersion)</WebPublishTargetsVersion>
+<<<<<<< HEAD
+=======
+
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(WebPublishTargetsVersion)</VSToolsPath>
     <_WebPublishTargetsPath Condition=" '$(_WebPublishTargetsPath)'=='' ">$(VSToolsPath)</_WebPublishTargetsPath>
     <AssemblyFileVersion Condition="'$(AssemblyFileVersion)' == ''">1.0.0.0</AssemblyFileVersion>

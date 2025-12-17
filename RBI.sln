@@ -1,5 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+<<<<<<< HEAD
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36518.9 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -9,19 +10,38 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "RBI", "http://localhost/RBI
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
 		Debug.AspNetCompiler.VirtualPath = "/RBI"
 		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\..\inetpub\wwwroot\RBI\"
+=======
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "RBI", "http://localhost/RBI", "{B50BCFF1-2452-450F-9A3C-CDFE586FFEB4}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/RBI"
+		Debug.AspNetCompiler.PhysicalPath = "..\RBI\"
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\RBI\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/RBI"
+<<<<<<< HEAD
 		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\..\inetpub\wwwroot\RBI\"
+=======
+		Release.AspNetCompiler.PhysicalPath = "..\RBI\"
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\RBI\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
+<<<<<<< HEAD
 		SlnRelativePath = "..\..\..\..\..\inetpub\wwwroot\RBI\"
+=======
+		SlnRelativePath = "..\RBI\"
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
 	EndProjectSection
 EndProject
 Global
@@ -29,13 +49,21 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< HEAD
 		{7EF39A4B-FF5D-40C6-9049-281AB9EB6C5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7EF39A4B-FF5D-40C6-9049-281AB9EB6C5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+=======
+		{B50BCFF1-2452-450F-9A3C-CDFE586FFEB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B50BCFF1-2452-450F-9A3C-CDFE586FFEB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+<<<<<<< HEAD
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {86F43649-4BA2-477B-8726-7018C70ABC4B}
 	EndGlobalSection
+=======
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
 EndGlobal

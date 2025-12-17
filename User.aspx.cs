@@ -116,7 +116,11 @@ public partial class User : System.Web.UI.Page
 
                 SqlConnection conn = BusinessTier.getConnection();
                 conn.Open();
+<<<<<<< HEAD
                 string strqry1 = "SELECT [CompanyId], [CompanyName] FROM [Company] where deleted=0 ORDER BY [CompanyId]";
+=======
+                string strqry1 = "SELECT [CompanyId], [CompanyName] FROM [RBI].[dbo].[Company] where deleted=0 ORDER BY [CompanyId]";
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
                 SqlCommand cmd11 = new SqlCommand(strqry1, conn);
                 SqlDataReader rdr11 = cmd11.ExecuteReader();
                 while (rdr11.Read())
@@ -131,7 +135,11 @@ public partial class User : System.Web.UI.Page
 
                 if (!(string.IsNullOrEmpty(lblID.Text.ToString())))
                 {
+<<<<<<< HEAD
                     string strqry = "SELECT [Company], [CompanyName] FROM [UserInfo] where deleted=0 and ID = '" + lblID.Text.ToString() + "' ";
+=======
+                    string strqry = "SELECT [Company], [CompanyName] FROM [RBI].[dbo].[UserInfo] where deleted=0 and ID = '" + lblID.Text.ToString() + "' ";
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
                     SqlCommand cmd1 = new SqlCommand(strqry, conn);
                     SqlDataReader rdr1 = cmd1.ExecuteReader();
                     if (rdr1.Read())

@@ -285,7 +285,11 @@ public partial class POF : System.Web.UI.Page
             conn.Open();
             try
             {
+<<<<<<< HEAD
                 string sql1 = "SELECT [CompAutoID],[CompName] FROM [Tbl_EquipmentComponentDetails] where [Clad] = 'Clad' and deleted=0";
+=======
+                string sql1 = "SELECT [CompAutoID],[CompName] FROM [RBI].[dbo].[Tbl_EquipmentComponentDetails] where [Clad] = 'Clad' and deleted=0";
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
                 SqlDataAdapter adapter1 = new SqlDataAdapter(sql1, conn);
                 DataTable dataTable1 = new DataTable();
                 adapter1.Fill(dataTable1);
@@ -540,7 +544,11 @@ public partial class POF : System.Web.UI.Page
         {
             try
             {
+<<<<<<< HEAD
                 string strqry = "SELECT [MRT],[ReadVal],[CorrosionAllownce],[Clad],[uCR] FROM [Tbl_EquipmentComponentDetails] where [ProcessareaID]='" + cboProcessArea.SelectedValue.ToString() + "' and EqupID='" + cboEquipment.SelectedValue.ToString() + "' and [CompAutoID]='" + cboComponent.SelectedValue.ToString() + "' and deleted=0";
+=======
+                string strqry = "SELECT [MRT],[ReadVal],[CorrosionAllownce],[Clad],[uCR] FROM [RBI].[dbo].[Tbl_EquipmentComponentDetails] where [ProcessareaID]='" + cboProcessArea.SelectedValue.ToString() + "' and EqupID='" + cboEquipment.SelectedValue.ToString() + "' and [CompAutoID]='" + cboComponent.SelectedValue.ToString() + "' and deleted=0";
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
                 SqlCommand cmd = new SqlCommand(strqry, conn);
                 SqlDataReader rd = cmd.ExecuteReader();
                 double trd = 0, t = 0, crcm = 0, CA = 0, tmin = 0, Art = 0, agerc = 0, age = 0;
@@ -2890,7 +2898,11 @@ public partial class POF : System.Web.UI.Page
             {
                 double tmin = Convert.ToDouble(cboComponent.SelectedItem.Attributes["MRT"].ToString());
                 double CA = Convert.ToDouble(cboComponent.SelectedItem.Attributes["CorrosionAllownce"].ToString());
+<<<<<<< HEAD
                 string sql1 = "SELECT [ReadVal] as trd FROM [Tbl_EquipmentComponentDetails] where [CompAutoID]=" + cboComponent.SelectedValue.ToString().Trim() + " and Deleted=0";
+=======
+                string sql1 = "SELECT [ReadVal] as trd FROM [RBI].[dbo].[Tbl_EquipmentComponentDetails] where [CompAutoID]=" + cboComponent.SelectedValue.ToString().Trim() + " and Deleted=0";
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
                 SqlCommand cmd = new SqlCommand(sql1, conn);
                 SqlDataReader rd = cmd.ExecuteReader();
                 rd.Read();
@@ -3234,7 +3246,11 @@ public partial class POF : System.Web.UI.Page
             {
                 double tmin = Convert.ToDouble(cboComponent.SelectedItem.Attributes["MRT"].ToString());
                 double CA = Convert.ToDouble(cboComponent.SelectedItem.Attributes["CorrosionAllownce"].ToString());
+<<<<<<< HEAD
                 string sql1 = "SELECT [ReadVal] as trd FROM [Tbl_EquipmentComponentDetails] where [CompAutoID]=" + cboComponent.SelectedValue.ToString().Trim() + " and Deleted=0";
+=======
+                string sql1 = "SELECT [ReadVal] as trd FROM [RBI].[dbo].[Tbl_EquipmentComponentDetails] where [CompAutoID]=" + cboComponent.SelectedValue.ToString().Trim() + " and Deleted=0";
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
                 SqlCommand cmd = new SqlCommand(sql1, conn);
                 SqlDataReader rd = cmd.ExecuteReader();
                 rd.Read();
@@ -7662,6 +7678,7 @@ public partial class POF : System.Web.UI.Page
         }
     }
 
+<<<<<<< HEAD
     protected void btnLiningDelete_Click(object sender, EventArgs e)
     {
         SqlConnection conn = BusinessTier.getConnection();
@@ -7714,6 +7731,8 @@ public partial class POF : System.Web.UI.Page
         }
     }
 
+=======
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
     protected void btnECDDelete_Click(object sender, EventArgs e)
     {
         SqlConnection conn = BusinessTier.getConnection();

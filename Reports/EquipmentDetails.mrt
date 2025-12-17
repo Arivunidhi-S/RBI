@@ -982,7 +982,11 @@
               <Name>Text73</Name>
               <Page isRef="5" />
               <Parent isRef="7" />
+<<<<<<< HEAD
               <Text>    </Text>
+=======
+              <Text>: {Format("{0:dd-MMM-yyyy}", VW_InspectionPlan.InspectDate)}</Text>
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
               <TextBrush>Black</TextBrush>
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
@@ -1519,10 +1523,17 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
+<<<<<<< HEAD
   <ReportChanged>12/16/2025 11:20:40 AM</ReportChanged>
   <ReportCreated>8/5/2014 12:34:11 PM</ReportCreated>
   <ReportFile>C:\inetpub\wwwroot\RBI\Reports\EquipmentDetails.mrt</ReportFile>
   <ReportGuid>d06144de6d9a4d6db3b5e2c4d7bcb2d9</ReportGuid>
+=======
+  <ReportChanged>2/1/2016 1:28:51 PM</ReportChanged>
+  <ReportCreated>8/5/2014 12:34:11 PM</ReportCreated>
+  <ReportFile>C:\inetpub\wwwroot\RBI\Reports\EquipmentDetails.mrt</ReportFile>
+  <ReportGuid>ca314e1998204161a313acd91a54d351</ReportGuid>
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
   <ReportName>Report</ReportName>
   <ReportUnit>Inches</ReportUnit>
   <ReportVersion>2013.2.1700</ReportVersion>

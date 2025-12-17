@@ -111,8 +111,13 @@ public partial class Report : System.Web.UI.Page
              ds1.DataSetName = "DynamicDataSource1";
              ds1.Tables.Add(sqldatasource1);
              ad1.Fill(ds1, sqldatasource1);
+<<<<<<< HEAD
             string currentDirectory = System.IO.Directory.GetCurrentDirectory();
                 path = currentDirectory + "\\Reports\\Inspection.mrt";
+=======
+       
+                path = "C:\\inetpub\\wwwroot\\RBI\\Reports\\Inspection.mrt";
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
                 Stimulsoft.Report.StiReport stiReport1;
                 stiReport1 = new StiReport();
                 stiReport1.Dictionary.DataStore.Clear();
@@ -343,7 +348,10 @@ public partial class Report : System.Web.UI.Page
     protected void btn_Report_Submit_Click(object sender, EventArgs e)
     {
         lblStatus.Text = string.Empty;
+<<<<<<< HEAD
         string currentDirectory = AppDomain.CurrentDomain.BaseDirectory;
+=======
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
         if ((string.IsNullOrEmpty(cbo_Report_Select.Text.ToString())))
         {
             lblStatus.Text = "Select Reports";
@@ -386,21 +394,35 @@ public partial class Report : System.Web.UI.Page
                 {
                     double ptrans = Convert.ToDouble(readerdup["ptrans"].ToString());
                     double oppress = Convert.ToDouble(readerdup["OpPres"].ToString());
+<<<<<<< HEAD
                    
                     
                     if (readerdup["Fluid"].ToString() == "Liquid")
                     {
                         path = currentDirectory + "\\Reports\\COF_Flammable_Liquid.mrt";
+=======
+                    if (readerdup["Fluid"].ToString() == "Liquid")
+                    {
+                        path = "C:\\inetpub\\wwwroot\\RBI\\Reports\\COF_Flammable_Liquid.mrt";
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
                     }
                     else
                     {
                         if (oppress < ptrans)
                         {
+<<<<<<< HEAD
                             path = currentDirectory + "\\Reports\\COF_Flammable_Vapour_Sonic.mrt";
                         }
                         else
                         {
                             path = currentDirectory + "\\Reports\\COF_Flammable_Vapour_SubSonic.mrt";
+=======
+                            path = "c:\\inetpub\\wwwroot\\RBI\\Reports\\COF_Flammable_Vapour_Sonic.mrt";
+                        }
+                        else
+                        {
+                            path = "c:\\inetpub\\wwwroot\\RBI\\Reports\\COF_Flammable_Vapour_SubSonic.mrt";
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
                         }
                     }
                 }
@@ -459,17 +481,29 @@ public partial class Report : System.Web.UI.Page
                     double oppress = Convert.ToDouble(rd["OpPres"].ToString());
                     if (rd["Fluid"].ToString() == "Liquid")
                     {
+<<<<<<< HEAD
                         path = currentDirectory + "\\Reports\\COF_Non_Flammable_Liquid.mrt";
+=======
+                        path = "C:\\inetpub\\wwwroot\\RBI\\Reports\\COF_Non_Flammable_Liquid.mrt";
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
                     }
                     else
                     {
                         if (oppress < ptrans)
                         {
+<<<<<<< HEAD
                             path = currentDirectory + "\\Reports\\COF_Non_Flammable_Vapour_Sonic.mrt";
                         }
                         else
                         {
                             path = currentDirectory + "\\Reports\\COF_Non_Flammable_Vapour_SubSonic.mrt";
+=======
+                            path = "c:\\inetpub\\wwwroot\\RBI\\Reports\\COF_Non_Flammable_Vapour_Sonic.mrt";
+                        }
+                        else
+                        {
+                            path = "c:\\inetpub\\wwwroot\\RBI\\Reports\\COF_Non_Flammable_Vapour_SubSonic.mrt";
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
                         }
                     }
                 }
@@ -908,7 +942,11 @@ public partial class Report : System.Web.UI.Page
                 ds5.Tables.Add(sqldatasource5);
                 ad5.Fill(ds1, sqldatasource5);
 
+<<<<<<< HEAD
                 path = currentDirectory + "\\Reports\\Chart_RiskRanking.mrt";
+=======
+                path = "C:\\inetpub\\wwwroot\\RBI\\Reports\\Chart_RiskRanking.mrt";
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
                 Stimulsoft.Report.StiReport stiReport1;
                 stiReport1 = new StiReport();
                 stiReport1.Dictionary.DataStore.Clear();
@@ -967,7 +1005,11 @@ public partial class Report : System.Web.UI.Page
                     ds1.Tables.Add(sqldatasource1);
                     ad1.Fill(ds1, sqldatasource1);
                 }
+<<<<<<< HEAD
                 path = currentDirectory + "\\Reports\\Inspection.mrt";
+=======
+                path = "C:\\inetpub\\wwwroot\\RBI\\Reports\\Inspection.mrt";
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
                 Stimulsoft.Report.StiReport stiReport1;
                 stiReport1 = new StiReport();
                 stiReport1.Dictionary.DataStore.Clear();
@@ -1001,7 +1043,11 @@ public partial class Report : System.Web.UI.Page
                     ds1.Tables.Add(sqldatasource1);
                     ad1.Fill(ds1, sqldatasource1);
 
+<<<<<<< HEAD
                 path = currentDirectory + "\\Reports\\InspectionSummaryExtend.mrt";
+=======
+                    path = "C:\\inetpub\\wwwroot\\RBI\\Reports\\InspectionSummaryExtend.mrt";
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
                 Stimulsoft.Report.StiReport stiReport1;
                 stiReport1 = new StiReport();
                 stiReport1.Dictionary.DataStore.Clear();
@@ -1034,7 +1080,11 @@ public partial class Report : System.Web.UI.Page
                 ds1.Tables.Add(sqldatasource1);
                 ad1.Fill(ds1, sqldatasource1);
 
+<<<<<<< HEAD
                 path = currentDirectory + "\\Reports\\POFList.mrt";
+=======
+                path = "C:\\inetpub\\wwwroot\\RBI\\Reports\\POFList.mrt";
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
                 Stimulsoft.Report.StiReport stiReport1;
                 stiReport1 = new StiReport();
                 stiReport1.Dictionary.DataStore.Clear();
@@ -1061,14 +1111,22 @@ public partial class Report : System.Web.UI.Page
                 DataSet ds1 = new DataSet();
 
                 sqldatasource1 = "VW__EquipmentAsset";
+<<<<<<< HEAD
                 sql1 = "SELECT ROW_NUMBER() OVER(ORDER BY [DoshNo] DESC) as No,[ProcessArea],[DoshNo],[EqupID],[EqupDescription] FROM [VW__EquipmentAsset] where companyid='" + Convert.ToInt32(Session["sesCompanyID"].ToString()) + "' and ProcessAreaID='" + cboProcessArea.SelectedValue.ToString().Trim() + "'";
+=======
+                sql1 = "SELECT ROW_NUMBER() OVER(ORDER BY [DoshNo] DESC) as No,[ProcessArea],[DoshNo],[EqupID],[EqupDescription] FROM [RBI].[dbo].[VW__EquipmentAsset] where companyid='" + Convert.ToInt32(Session["sesCompanyID"].ToString()) + "' and ProcessAreaID='" + cboProcessArea.SelectedValue.ToString().Trim() + "'";
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
                 SqlDataAdapter ad1 = new SqlDataAdapter(sql1, con);
 
                 ds1.DataSetName = "DynamicDataSource1";
                 ds1.Tables.Add(sqldatasource1);
                 ad1.Fill(ds1, sqldatasource1);
 
+<<<<<<< HEAD
                 path = currentDirectory + "\\Reports\\EquipmentList.mrt";
+=======
+                path = "C:\\inetpub\\wwwroot\\RBI\\Reports\\EquipmentList.mrt";
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
                 Stimulsoft.Report.StiReport stiReport1;
                 stiReport1 = new StiReport();
                 stiReport1.Dictionary.DataStore.Clear();
@@ -1093,7 +1151,11 @@ public partial class Report : System.Web.UI.Page
         //       string constr = ConfigurationManager.ConnectionStrings["connString"].ConnectionString;
         //using (SqlConnection con = new SqlConnection(constr))
         {
+<<<<<<< HEAD
             using (SqlCommand cmd = new SqlCommand("SELECT ROW_NUMBER() OVER(ORDER BY DamageFact,Doshno) as No, [DoshNo],[EquipID],[ProcessArea],[EqupDescription],[CompName],[InspecDate],[DesignCode],[materialspecification],[DesignTemp],[Designpressure],[NormalThickness] as NorminalThick,[Insulated],[fins] as InsulationMaterial,[COF_NonFlammableRepresentativeFluid] as RepresentativeFluid_NonFlame,[Repfluid] as RepresentativeFluid_Flame,[COF_NonFlammableFluid] as Fluid_NonFlame,[Fluid]as Fluid_Flame,[YearInstalled],[OPPressure],[OPTemp],DamageFact as DamageFactor,IntrInsp as Intrusive,NonIntrInsp as NonIntrusive,NextInspectionDate,[FinCOFCate] as FinancialCOFRanking,[COFCate] as COFRanking,[(Choose)Use COF],[Category] as POFCategory,[ChooseRisk] as RiskRanking,[ShortCRrate],[LongCRrate],[uCR],[MRT],[Initialdate],[Initialvalue] as InitialThickness,[Previousdate],[Previousvalue] as PreviousThickness,[InspecDate] as Currentdate,[ReadVal] as CurrentThickness,DATEDIFF(year,[YearInstalled],[InspecDate]) as AgeInService,[RemainingLife],[historydescription] as EquipmentHistory,[DOSHobservation] FROM [VW_InsSummary_Dosh] where companyid='" + Convert.ToInt32(Session["sesCompanyID"].ToString()) + "' order by DamageFact,Doshno"))
+=======
+            using (SqlCommand cmd = new SqlCommand("SELECT ROW_NUMBER() OVER(ORDER BY DamageFact,Doshno) as No, [DoshNo],[EquipID],[ProcessArea],[EqupDescription],[CompName],[InspecDate],[DesignCode],[materialspecification],[DesignTemp],[Designpressure],[NormalThickness] as NorminalThick,[Insulated],[fins] as InsulationMaterial,[COF_NonFlammableRepresentativeFluid] as RepresentativeFluid_NonFlame,[Repfluid] as RepresentativeFluid_Flame,[COF_NonFlammableFluid] as Fluid_NonFlame,[Fluid]as Fluid_Flame,[YearInstalled],[OPPressure],[OPTemp],DamageFact as DamageFactor,IntrInsp as Intrusive,NonIntrInsp as NonIntrusive,NextInspectionDate,[FinCOFCate] as FinancialCOFRanking,[COFCate] as COFRanking,[(Choose)Use COF],[Category] as POFCategory,[ChooseRisk] as RiskRanking,[ShortCRrate],[LongCRrate],[uCR],[MRT],[Initialdate],[Initialvalue] as InitialThickness,[Previousdate],[Previousvalue] as PreviousThickness,[InspecDate] as Currentdate,[ReadVal] as CurrentThickness,DATEDIFF(year,[YearInstalled],[InspecDate]) as AgeInService,[RemainingLife],[historydescription] as EquipmentHistory,[DOSHobservation] FROM [RBI].[dbo].[VW_InsSummary_Dosh] where companyid='" + Convert.ToInt32(Session["sesCompanyID"].ToString()) + "' order by DamageFact,Doshno"))
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
             {
                 using (SqlDataAdapter sda = new SqlDataAdapter())
                 {
@@ -1147,7 +1209,11 @@ public partial class Report : System.Web.UI.Page
                 ds.Tables.Add(sqldatasource2);
                 ad.Fill(ds, sqldatasource2);
 
+<<<<<<< HEAD
                 path = currentDirectory + "\\Reports\\EquipmentDetails.mrt";
+=======
+                path = "C:\\inetpub\\wwwroot\\RBI\\Reports\\EquipmentDetails.mrt";
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
                 Stimulsoft.Report.StiReport stiReport1;
                 stiReport1 = new StiReport();
                 stiReport1.Dictionary.DataStore.Clear();
@@ -1182,7 +1248,11 @@ public partial class Report : System.Web.UI.Page
                 ds1.Tables.Add(sqldatasource1);
                 ad1.Fill(ds1, sqldatasource1);
 
+<<<<<<< HEAD
                 path = currentDirectory + "\\Reports\\Inspection Plan.mrt";
+=======
+                path = "C:\\inetpub\\wwwroot\\RBI\\Reports\\Inspection Plan.mrt";
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
                 Stimulsoft.Report.StiReport stiReport1;
                 stiReport1 = new StiReport();
                 stiReport1.Dictionary.DataStore.Clear();
@@ -1214,7 +1284,11 @@ public partial class Report : System.Web.UI.Page
                 ds1.DataSetName = "DynamicDataSource1";
                 ds1.Tables.Add(sqldatasource1);
                 ad1.Fill(ds1, sqldatasource1);
+<<<<<<< HEAD
                 path = currentDirectory + "\\Reports\\Chart_Inspection.mrt";
+=======
+                path = "C:\\inetpub\\wwwroot\\RBI\\Reports\\Chart_Inspection.mrt";
+>>>>>>> de42cd96472379cc87fdb49a84a81dcd542d8eaa
                 Stimulsoft.Report.StiReport stiReport1;
                 stiReport1 = new StiReport();
                 stiReport1.Dictionary.DataStore.Clear();
