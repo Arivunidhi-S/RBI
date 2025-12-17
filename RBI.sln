@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "RBI", "http://localhost/RBI", "{7EF39A4B-FF5D-40C6-9049-281AB9EB6C5E}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/RBI"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\..\inetpub\wwwroot\RBI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\RBI\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/RBI"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\..\inetpub\wwwroot\RBI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\RBI\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\..\..\..\..\inetpub\wwwroot\RBI\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EF39A4B-FF5D-40C6-9049-281AB9EB6C5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EF39A4B-FF5D-40C6-9049-281AB9EB6C5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86F43649-4BA2-477B-8726-7018C70ABC4B}
+	EndGlobalSection
+EndGlobal
